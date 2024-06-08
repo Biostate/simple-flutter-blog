@@ -4,7 +4,7 @@ This project uses dummyapi.io to make practice about Restfull API. Project has C
 
 ## Video
 
-Video will be added later.
+https://github.com/Biostate/simple-flutter-blog/assets/5051330/47339a0a-8b91-4146-81df-d6a55f538d51
 
 ## Screenshots
 
