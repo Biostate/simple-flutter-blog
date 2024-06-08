@@ -145,13 +145,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             final dataItem = data[dataIndex];
                             return Container(
                               width: 100.0,
-                              height: 100.0,
+                              height: 0.0,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
@@ -165,20 +166,24 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-                                  Text(
-                                    valueOrDefault<String>(
-                                      getJsonField(
-                                        dataItem,
-                                        r'''$.text''',
-                                      )?.toString(),
-                                      'Loading',
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 15.0, 0.0, 15.0),
+                                    child: Text(
+                                      valueOrDefault<String>(
+                                        getJsonField(
+                                          dataItem,
+                                          r'''$.text''',
+                                        )?.toString(),
+                                        'Loading',
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Readex Pro',
+                                            letterSpacing: 0.0,
+                                          ),
                                     ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Readex Pro',
-                                          letterSpacing: 0.0,
-                                        ),
                                   ),
                                   FFButtonWidget(
                                     onPressed: () async {
