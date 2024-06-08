@@ -1,7 +1,5 @@
 # Simple Blog
 
-A new Flutter project.
+This project is made for Mobile Application Development Lecture in Erciyes University.
 
-## Getting Started
-
-FlutterFlow projects are built to run on the Flutter _stable_ release.
+This project uses dummyapi.io to make practice about Restfull API. Project has CRUD operations. User can Create, Update, Delete and View the posts.
